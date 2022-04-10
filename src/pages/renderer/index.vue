@@ -1,5 +1,5 @@
 <template>
-  <div>渲染器{{ renderId }}</div>
+  <RenderComponent :queryId="queryId"/>
 </template>
 
 <script lang="ts">
@@ -7,11 +7,11 @@ export default defineComponent({
   name: "Renderer",
   data() {
     return {
-      renderId: ""
+      queryId: ""
     };
   },
   created() {
-    this.renderId = this.$route.params.id;
+    this.queryId = this.$route.params.id;
   }
 })
 </script>

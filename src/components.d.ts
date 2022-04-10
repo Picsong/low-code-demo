@@ -4,9 +4,11 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Dialog: typeof import('./components/Dialog.vue')['default']
     Editor: typeof import('./components/Editor.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Formily: typeof import('./components/Formily.vue')['default']
+    PageLayout: typeof import('./components/PageLayout.vue')['default']
     RenderComponent: typeof import('./components/RenderComponent.vue')['default']
     ScreenAdapter: typeof import('./components/ScreenAdapter.vue')['default']
   }
